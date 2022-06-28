@@ -1,0 +1,16 @@
+{ 
+  "manifest_version": 3,
+  "version": "0.0.1",
+  "name": "Character Counter",
+  "permissions": [
+    "contextMenus"
+  ],
+  "action":{
+    "default_title": "Character Counter",
+    "default_popup": "popup.html"
+  },
+  "background": {
+    "service_worker": "background.js",
+    "persistence": false
+  }
+}

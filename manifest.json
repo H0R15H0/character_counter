@@ -5,6 +5,12 @@
   "permissions": [
     "contextMenus"
   ],
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["popup.js"]
+    }
+  ],
   "action":{
     "default_title": "Character Counter",
     "default_popup": "popup.html"

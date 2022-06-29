@@ -7,8 +7,6 @@ chrome.runtime.onInstalled.addListener(() => {
 });
 
 chrome.contextMenus.onClicked.addListener((data, tab) => {
-  console.log(data.selectionText)
-  console.log(tab)
-  chrome.tabs.sendMessage(tab.id, {name: "countCharacters", selectionText: data.selectionText}, () => {
+  chrome.tabs.sendMessage(tab.id, {name: "countCharacters"}, () => {
   });
 })

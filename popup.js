@@ -36,6 +36,7 @@ function calculateCharacterCount(string) {
 function isExcludableCharacter(char) {
   switch (char) {
     case " ":
+    case "　": // Full width space
     case "\n": 
       return true
     default:

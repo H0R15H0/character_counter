@@ -22,24 +22,22 @@ chrome.runtime.onMessage.addListener((request) => {
 // calculation logics
 function calculateCharacterCount(string) {
   const segmenter = new Intl.Segmenter({ granularity: "grapheme" });
-  const characters = [...segmenter.segment(string)] // each item looks like {segment: 'T', index: 0, input: 'This'}
-  const charactersWithoutExcludables = characters.filter(char => !isExcludableCharacter(char.segment))
-  return [characters.length, charactersWithoutExcludables.length]
+  const segments = [...segmenter.segment(string)] // each item looks like {segment: 'T', index: 0, input: 'This'}
+  const characters = segments.filter(char => !isNewLine(char.segment))
+  const spaces = characters.filter(char => isSpace(char.segment))
+  return [characters.length, spaces.length]
 }
 
-function isExcludableCharacter(char) {
-  switch (char) {
-    case " ":
-    case "　": // Full width space
-    case "\n": 
-      return true
-    default:
-      return false
-  }
+function isSpace(char) {
+  return (char === " " || char === "　") ? true : false
+}
+
+function isNewLine(char) {
+  return char === "\n" ? true : false
 }
 
 // document manipulation
-function buildResultDialog(characterCounts, withoutExcludableCharacterCounts) {
+function buildResultDialog(characterCounts, spaceCounts) {
   const resultDialog = document.createElement('div')
   resultDialog.id = "character-counter-result-dialog"
   resultDialog.innerHTML = `
@@ -48,8 +46,8 @@ function buildResultDialog(characterCounts, withoutExcludableCharacterCounts) {
       <p>${characterCounts}</p>
     </div>
     <div class="cc-box">
-      <p>CHARACTERS (without space)</p>
-      <p>${withoutExcludableCharacterCounts}</p>
+      <p>SPACES</p>
+      <p>${spaceCounts}</p>
     </div>
   `
 

@@ -1,7 +1,11 @@
 { 
   "manifest_version": 3,
-  "version": "0.0.1",
   "name": "Character Counter",
+  "description": "High-precision character counter for Chrome. Surrogate pair characters (e.g., emoji) can also be counted accurately. Others cannot.",
+  "version": "0.0.1",
+  "icons": {
+    "128": "icons/icon128.png"
+  },
   "permissions": [
     "contextMenus"
   ],

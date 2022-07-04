@@ -1,8 +1,9 @@
 { 
   "manifest_version": 3,
-  "name": "Character Counter",
-  "description": "High-precision character counter for Chrome. Surrogate pair characters (e.g., emoji) can also be counted accurately. Others cannot.",
+  "name": "__MSG_extName__",
+  "description": "__MSG_extDescription__",
   "version": "0.0.1",
+  "default_locale": "en",
   "icons": {
     "128": "icons/icon128.png"
   },

@@ -1,0 +1,8 @@
+{
+  "extName": { 
+    "message": "Character Counter"
+  },
+  "extDescription": { 
+    "message": "High-precision character counter for Chrome. Surrogate pair characters (e.g., emoji) can also be counted accurately. Others cannot."
+  }
+}

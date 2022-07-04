@@ -1,0 +1,14 @@
+#character-counter-result-dialog {
+  border: solid gray;
+  background-color: white;
+  box-shadow: 0px 1px 3px gray;
+  padding: 3px;
+  display: flex;
+}
+
+.cc-box {
+  margin: 3px;
+  padding: 3px;
+  border: solid rgb(10, 168, 253);
+  border-radius: 5px;
+}

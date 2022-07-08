@@ -21,17 +21,21 @@ chrome.runtime.onMessage.addListener((request) => {
 
 
 // document manipulation
-function buildResultDialog(characterCounts, spaceCounts) {
+function buildResultDialog(characterCounts, spaceCounts, wordCounts) {
   const resultDialog = document.createElement('div')
   resultDialog.id = "character-counter-result-dialog"
   resultDialog.innerHTML = `
     <div class="cc-box">
-      <p>CHARACTERS</p>
+      <p>${chrome.i18n.getMessage("CHARACTERS")}</p>
       <p>${characterCounts}</p>
     </div>
     <div class="cc-box">
-      <p>SPACES</p>
+      <p>${chrome.i18n.getMessage("SPACES")}</p>
       <p>${spaceCounts}</p>
+    </div>
+    <div class="cc-box">
+      <p>${chrome.i18n.getMessage("WORDS")}</p>
+      <p>${wordCounts}</p>
     </div>
   `
 

@@ -1,7 +1,7 @@
 chrome.runtime.onInstalled.addListener(() => {
   chrome.contextMenus.create({
     "id": "character_counter",
-    "title": "Count Character",
+    "title": chrome.i18n.getMessage("extName"),
     "contexts": ["selection"]
   });
 });

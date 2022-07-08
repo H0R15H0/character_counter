@@ -4,5 +4,14 @@
   },
   "extDescription": { 
     "message": "High-precision character counter for Chrome."
+  },
+  "CHARACTERS": {
+    "message": "CHARACTERS"
+  },
+  "SPACES": {
+    "message": "SPACES"
+  },
+  "WORDS": {
+    "message": "WORDS"
   }
 }

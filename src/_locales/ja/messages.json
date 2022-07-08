@@ -4,5 +4,14 @@
   },
   "extDescription": {
     "message": "高精度の文字数カウンターです。"
+  },
+  "CHARACTERS": {
+    "message": "文字数"
+  },
+  "SPACES": {
+    "message": "空白数"
+  },
+  "WORDS": {
+    "message": "単語数"
   }
 }

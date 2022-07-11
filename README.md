@@ -5,8 +5,7 @@
 
 Chrome extension for count characters.
 
-
-<img width="1402" alt="スクリーンショット 2022-07-05 1 38 04" src="https://user-images.githubusercontent.com/51479912/177196491-85f05791-88e4-40a0-af4b-2309beb0a3c3.png">
+<img width="1024" alt="スクリーンショット 2022-07-09 0 36 43" src="https://user-images.githubusercontent.com/51479912/178274042-261e967b-a7b1-434c-8c2c-79eb27a77bc1.png">
 
 
 # Instalation

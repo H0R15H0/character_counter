@@ -8,7 +8,7 @@ function calculateCharacterCount(string) {
 
   const characters = segmentsGrapheme.filter(char => !isNewLine(char.segment))
   const spaces = characters.filter(char => isSpace(char.segment))
-  const words = segmentsWord.filter(word => !isSpace(word.segment) && !isNewLine(word.segment))
+  const words = segmentsWord.filter(word => !isSpace(word.segment) && !isNewLine(word.segment) && !isSymbol(word.segment))
 
   return [characters.length, spaces.length, words.length]
 }
@@ -19,4 +19,11 @@ function isSpace(char) {
 
 function isNewLine(char) {
   return char === "\n" ? true : false
+}
+
+function isSymbol(char) {
+  return (
+    char === "," || char === "." || char === "<" || char === ">" || char === "/" || char === "?" || char === ";" || char === ":" || char === "'" || char === `"` || char === "[" || char === "{" || char === "]" || char === "}" || char === "!" || char === "@" || char === "#" || char === "$" || char === "%" || char === "^" || char === "*" || char === "(" || char === ")" || char === "-" || char === "_" || char === "=" || char === "+" || char === "\\" || char === "|" || char === "`" || char === "~" || // English symbol
+    char === "、" || char === "。" || char === "＜" || char === "＞" || char === "・" || char === "？" || char === "；" || char === "：" || char === "’" || char === "”" || char === "「" || char === "『" || char === "」" || char === "』" || char === "！" || char === "＠" || char === "＃" || char === "＄" || char === "％" || char === "＾" || char === "＊" || char === "（" || char === "）" || char === "ー" || char === "＿" || char === "＝" || char === "＋" || char === "￥" || char === "｜" || char === "｀" || char === "〜" // Japanese symbol
+  ) ? true : false
 }

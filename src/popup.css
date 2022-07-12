@@ -12,3 +12,9 @@
   border: solid rgb(10, 168, 253);
   border-radius: 5px;
 }
+
+.cc-box p {
+  color: black;
+  margin: 0;
+  padding: 0;
+}

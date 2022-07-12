@@ -3,10 +3,14 @@
 <img src="https://user-images.githubusercontent.com/51479912/177196562-f7e84dbb-adf8-4ce4-a248-8747ab706054.png" alt="Character Counter Icon" style="justify-content: center;">
 </div>
 
-Chrome extension for count characters.
-
 <img width="1024" alt="スクリーンショット 2022-07-09 0 36 43" src="https://user-images.githubusercontent.com/51479912/178274042-261e967b-a7b1-434c-8c2c-79eb27a77bc1.png">
 
+Chrome extension for count characters.
+Surrogate pair characters (e.g., emoji) can also be counted accurately.
+
+It also counts not only the number of characters, but also the number of spaces and the number of words.
+
+The implementation depends on javascript `Intl.Segmenter`.
 
 # Instalation
 

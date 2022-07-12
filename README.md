@@ -7,7 +7,7 @@ Click [here](https://github.com/H0R15H0/character_counter/blob/main/docs/README.
 
 <img width="734" alt="en-image" src="https://user-images.githubusercontent.com/51479912/178424499-bea70a81-dc46-426d-a92f-99d84efb72bd.png">
 
-Chrome extension for count characters.
+Chrome extension for counting characters.
 Surrogate pair characters (e.g., emoji) can also be counted accurately.
 
 It also counts not only the number of characters, but also the number of spaces and the number of words.

@@ -5,7 +5,7 @@ Click [here](https://github.com/H0R15H0/character_counter/blob/main/docs/README.
 <img src="https://user-images.githubusercontent.com/51479912/177196562-f7e84dbb-adf8-4ce4-a248-8747ab706054.png" alt="Character Counter Icon" style="justify-content: center;">
 </div>
 
-<img width="1024" alt="screen shot of Character Counter" src="https://user-images.githubusercontent.com/51479912/178274042-261e967b-a7b1-434c-8c2c-79eb27a77bc1.png">
+<img width="734" alt="en-image" src="https://user-images.githubusercontent.com/51479912/178424499-bea70a81-dc46-426d-a92f-99d84efb72bd.png">
 
 Chrome extension for count characters.
 Surrogate pair characters (e.g., emoji) can also be counted accurately.

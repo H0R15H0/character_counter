@@ -5,7 +5,7 @@
 
 <img width="1024" alt="en-image" src="https://user-images.githubusercontent.com/51479912/178274042-261e967b-a7b1-434c-8c2c-79eb27a77bc1.png">
 
-<img width="640" alt="ja-image" src="https://user-images.githubusercontent.com/51479912/178418052-427787fa-d6c5-4277-9563-3fdf3755cd7d.png">
+<img width="709" alt="ja-image" src="https://user-images.githubusercontent.com/51479912/178423958-94feb1b3-a52b-41ed-8139-ba4c5f6bc1bd.png">
 
 文字数を数えてくれる Chrome Extension です。
 絵文字や日本語の「𪗱」「𪘚」といったサロゲートペアとなる文字まで正確に数えることができます。

@@ -1,4 +1,6 @@
 # Character Counter
+
+Click [here](https://github.com/H0R15H0/character_counter/blob/main/docs/README.ja.md) for Japanese README.
 <div align="center">
 <img src="https://user-images.githubusercontent.com/51479912/177196562-f7e84dbb-adf8-4ce4-a248-8747ab706054.png" alt="Character Counter Icon" style="justify-content: center;">
 </div>

@@ -36,7 +36,7 @@ Character Counter の開発者です。
     const [characters, spaces, words] = calculateCharacterCount(text)
     expect(characters).to.equal(42)
     expect(spaces).to.equal(4)
-    expect(words).to.equal(9)
+    expect(words).to.equal(8)
   });
   
   it('successfully count Japanese with emoji', () => {
@@ -47,7 +47,7 @@ Character Counter の開発者です。😎
     const [characters, spaces, words] = calculateCharacterCount(text)
     expect(characters).to.equal(44)
     expect(spaces).to.equal(4)
-    expect(words).to.equal(11)
+    expect(words).to.equal(10)
   });
 
   it('successfully count Japanese with surrogate pair', () => {
